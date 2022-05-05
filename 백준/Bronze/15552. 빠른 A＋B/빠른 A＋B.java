@@ -3,6 +3,7 @@ import java.io.InputStreamReader;
 import java.io.BufferedWriter;
 import java.io.OutputStreamWriter;
 import java.io.IOException;
+import java.util.StringTokenizer;
 
 public class Main {
     public static void main(String[]args) throws IOException {	
@@ -14,7 +15,8 @@ public class Main {
 			
 			for(int i=0; i<num;i++) {
 				String text = s_rd.readLine();
-				n_rd.write(Integer.parseInt(text.split(" ")[0])+Integer.parseInt(text.split(" ")[1])+"\n");
+				StringTokenizer st = new StringTokenizer(text);
+				n_rd.write(Integer.parseInt(st.nextToken())+Integer.parseInt(st.nextToken())+"\n");
 			}
 			n_rd.close();
 		}
