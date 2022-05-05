@@ -20,7 +20,7 @@ public class Main {
 			// 0과 1은 소수가 아니다. = true 값으로 변경
 			is_Prime[0] = is_Prime[1]=true;
 			
-			for(int i=2;i<=N;i++){
+			for(int i=2;i<=Math.sqrt(N);i++){
 				for(int j=2;i*j<=N;j++) {
 					is_Prime[i*j]=true;
 				}
