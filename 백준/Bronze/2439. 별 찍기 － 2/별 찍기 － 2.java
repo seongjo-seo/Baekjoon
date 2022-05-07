@@ -7,8 +7,8 @@ public class Main {
     	try {
 			BufferedReader s_rd = new BufferedReader(new InputStreamReader (System.in));
 			
-			String text[] = s_rd.readLine().split(" ");
-			int a = Integer.parseInt(text[0]);
+			String text= s_rd.readLine();
+			int a = Integer.parseInt(text);
 			
 			for(int i=1; i<=a;i++) {
 				for(int j=a;j>i;j--) {
