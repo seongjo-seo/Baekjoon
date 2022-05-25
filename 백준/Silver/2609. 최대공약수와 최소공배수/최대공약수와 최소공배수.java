@@ -12,7 +12,7 @@ public class Main {
 			int A = Integer.parseInt(text[0]);
 			int B = Integer.parseInt(text[1]);
 
-			for(int i=B;i>0;i--) {
+			for(int i=A+B;i>0;i--) {
 				if(A%i==0 && B%i==0) {
 					System.out.println(i);
 					break;
