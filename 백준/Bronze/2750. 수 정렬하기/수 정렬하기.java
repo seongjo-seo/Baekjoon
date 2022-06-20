@@ -1,31 +1,28 @@
-import java.util.Scanner;
- 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+import java.util.Arrays;
+
 public class Main {
-	public static void main(String[] args) {
-    
-		Scanner in = new Scanner(System.in);
-		
-		int N = in.nextInt();
-		int[] arr = new int[N];
-		
-		for(int i = 0; i < N; i++) {
-			arr[i] = in.nextInt();
-		}
- 
-		// Selection sort
-		for(int i = 0; i < N - 1; i++) {
-			for(int j = i + 1; j < N; j++) {
-				if(arr[i] > arr[j]) {
-					int temp = arr[j];
-					arr[j] = arr[i];
-					arr[i] = temp;
-				}
+	public static void main(String[] args) throws IOException {
+		try {
+			BufferedReader rd = new BufferedReader(new InputStreamReader(System.in));
+			
+			int N = Integer.parseInt(rd.readLine());
+			int num[] = new int [N];
+			
+			for(int i=0;i<N;i++) {
+				num[i] = Integer.parseInt(rd.readLine());
 			}
+			Arrays.sort(num);
+			
+			for(int i=0;i<N;i++) {
+				System.out.println(num[i]);
+			}
+			
 		}
-		
-		for(int val : arr) {
-			System.out.println(val);
+		catch(IOException e) {
+			System.out.println("error");
 		}
- 
 	}
 }
