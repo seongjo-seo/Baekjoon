@@ -10,5 +10,5 @@ for i in range(10):
     result[N] += 1
 
 
-print(int(total//10))
+print(int(total/10))
 print(result.index(max(result)))
