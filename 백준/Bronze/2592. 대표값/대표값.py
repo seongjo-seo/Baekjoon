@@ -1,5 +1,4 @@
 import sys
-from collections import Counter
 
 total = 0
 result = [0] * 1001
