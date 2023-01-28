@@ -8,7 +8,5 @@ req.sort()
 for i in range(N):
     if Len_N >= req[i]:
         Len_N += 1
-    else:
-        break
 
 print(Len_N)
