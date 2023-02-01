@@ -1,10 +1,10 @@
-# [Silver IV] 소수 찾기 - 1978 
+# [Silver V] 소수 찾기 - 1978 
 
 [문제 링크](https://www.acmicpc.net/problem/1978) 
 
 ### 성능 요약
 
-메모리: 11584 KB, 시간: 76 ms
+메모리: 31256 KB, 시간: 44 ms
 
 ### 분류
 
