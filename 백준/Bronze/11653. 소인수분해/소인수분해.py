@@ -1,17 +1,14 @@
 import sys
 
 N = int(sys.stdin.readline())
+i = 2
+r = int(N ** 0.5)
 
-
-def Factorization(N):
-    req = 2
-
-    while req <= N:
-        if N % req == 0:
-            print(req)
-            N /= req
-        else:
-            req += 1
-
-
-Factorization(N)
+while i<=r:
+    while N%i==0:
+        print(i)
+        N //= i
+    i += 1
+    
+if N > 1:
+    print(N)
