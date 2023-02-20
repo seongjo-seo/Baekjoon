@@ -5,27 +5,27 @@ N = int(sys.stdin.readline())
 queue = []
 
 for i in range(N):
-    cmd = sys.stdin.readline().split()
+    input_command = sys.stdin.readline().split()
 
-    if cmd[0] == "push":
-        queue.insert(0, cmd[1])
+    if input_command[0] == "push":
+        queue.insert(0, input_command[1])
         ##print(queue)
 
-    elif cmd[0] == "pop":
+    elif input_command[0] == "pop":
         if len(queue) != 0: print(queue.pop())
         else: print(-1)
 
-    elif cmd[0] == "size":
+    elif input_command[0] == "size":
         print(len(queue))
 
-    elif cmd[0] == "empty":
+    elif input_command[0] == "empty":
         if len(queue) == 0: print(1)
         else : print(0)
 
-    elif cmd[0] == "front":
+    elif input_command[0] == "front":
         if len(queue) == 0: print(-1)
         else: print(queue[len(queue) -1])
 
-    elif cmd[0] == "back":
+    elif input_command[0] == "back":
         if len(queue) == 0: print(-1)
         else: print(queue[0])
