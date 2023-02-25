@@ -1,5 +1,21 @@
 # [Silver V] 다리 놓기 - 1010 
 
+```python
+
+import sys
+import math
+
+T = int(sys.stdin.readline())
+
+for i in range(T):
+    input_data = sys.stdin.readline().rstrip()
+    N, M = map(int, input_data.rsplit())
+
+    bridges_cases = math.comb(M, N)
+    print(bridges_cases)
+```
+
+
 [문제 링크](https://www.acmicpc.net/problem/1010) 
 
 ### 성능 요약
