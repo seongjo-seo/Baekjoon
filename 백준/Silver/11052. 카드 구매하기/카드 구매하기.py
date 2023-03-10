@@ -1,12 +1,10 @@
 N = int(input())
-card_prices = list(map(int, input().split()))
+card_prices = [*map(int,input().split())]
+dp = [card_prices[0]] * N
+max_sum = 0
 
-dp = [0] * (N+1)
+for i in range(1, N):
+    dp[i] = max(card_prices[i], *[dp[j] + dp[i-j-1] for j in range(i//2+1)])
+    max_sum = max(dp[i], dp[-i])
 
-dp[0] = 0
-
-for i in range(1, N+1):
-    for j in range(0, i):
-        dp[i] = max(dp[i], dp[j] + card_prices[i-j-1])
-
-print(dp[N])
+print(max_sum)
