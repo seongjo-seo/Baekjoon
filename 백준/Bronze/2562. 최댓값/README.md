@@ -1,14 +1,14 @@
-# [Bronze II] 최댓값 - 2562 
+# [Bronze III] 최댓값 - 2562 
 
 [문제 링크](https://www.acmicpc.net/problem/2562) 
 
 ### 성능 요약
 
-메모리: 12848 KB, 시간: 108 ms
+메모리: 31388 KB, 시간: 56 ms
 
 ### 분류
 
-구현(implementation)
+구현
 
 ### 문제 설명
 
