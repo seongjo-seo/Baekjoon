@@ -1,28 +1,14 @@
-import java.util.ArrayList;
-
 class Solution {
     public int[] solution(int[] array) {
-        ArrayList<Integer> answer = new ArrayList<>();
-        int max = 0;
-        int idx = 0;
-        int count = 0;
+        int[] answer = new int[2];
         
-        for(int n : array){
-            if(n > max){
-                max = n;
-                idx = count;
+        for(int i = 0; i < array.length; i++){
+            if(array[i] > answer[0]){
+                answer[0] = array[i];
+                answer[1] = i;
             }
-            count += 1;
         }
         
-        answer.add(max);
-        answer.add(idx);
-
-        int[] result = new int[answer.size()];
-        for (int i = 0; i < answer.size(); i++) {
-            result[i] = answer.get(i);
-        }
-        
-        return result;
+        return answer;
     }
 }
