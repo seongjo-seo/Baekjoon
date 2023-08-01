@@ -1,0 +1,9 @@
+def solution(n):
+    answer = ''
+    
+    while n > 0:
+        n, mod = divmod(n, 3)
+        answer += str(mod)
+    
+    answer = int(answer[::1],3)
+    return answer
