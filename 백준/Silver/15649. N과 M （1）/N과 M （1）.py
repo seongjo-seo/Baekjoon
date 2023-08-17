@@ -1,6 +1,6 @@
 from typing import List
 
-def print_combinations(sequence: List[int], N: int, M: int) -> None:
+def permutations(sequence: List[int], N: int, M: int) -> None:
     # 종료 조건: 수열의 길이가 M과 같으면 출력
     if len(sequence) == M:
         print(" ".join(map(str, sequence)))
@@ -12,12 +12,12 @@ def print_combinations(sequence: List[int], N: int, M: int) -> None:
             sequence.append(i)
 
             # 다음 원소 선택을 위한 재귀 호출
-            print_combinations(sequence, N, M)
+            permutations(sequence, N, M)
 
             # 원소를 선택하지 않고 넘어가기
             sequence.pop()
 
 N, M = map(int,input().split())
 
-print_combinations([], N, M)
+permutations([], N, M)
 
